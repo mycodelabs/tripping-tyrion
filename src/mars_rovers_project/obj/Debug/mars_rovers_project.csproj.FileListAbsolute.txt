@@ -1,0 +1,5 @@
+D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.dll
+D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.pdb
+D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.csprojResolveAssemblyReference.cache
+D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.dll
+D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.pdb

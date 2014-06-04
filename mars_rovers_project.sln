@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mars_rovers_project", "src\mars_rovers_project\mars_rovers_project.csproj", "{6009D574-62FF-478E-9CD8-7ACBE1FB86EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mars_rovers_project.tests", "src\mars_rovers_project.tests\mars_rovers_project.tests.csproj", "{5DF0FFAC-3F7C-48D5-92FC-AC77B7BF0651}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6009D574-62FF-478E-9CD8-7ACBE1FB86EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6009D574-62FF-478E-9CD8-7ACBE1FB86EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6009D574-62FF-478E-9CD8-7ACBE1FB86EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6009D574-62FF-478E-9CD8-7ACBE1FB86EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF0FFAC-3F7C-48D5-92FC-AC77B7BF0651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF0FFAC-3F7C-48D5-92FC-AC77B7BF0651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF0FFAC-3F7C-48D5-92FC-AC77B7BF0651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF0FFAC-3F7C-48D5-92FC-AC77B7BF0651}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
