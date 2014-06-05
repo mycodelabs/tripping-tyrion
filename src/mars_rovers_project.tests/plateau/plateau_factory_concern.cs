@@ -1,5 +1,5 @@
-﻿using NUnit.Framework;
-using mars_rovers_project.plateau;
+﻿using mars_rovers_project.plateau_domain;
+using NUnit.Framework;
 using mars_rovers_project.shared;
 
 namespace mars_rovers_project.tests.plateau

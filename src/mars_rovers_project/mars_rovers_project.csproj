@@ -40,18 +40,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="infrastructure\LookUp.cs" />
-    <Compile Include="rover\Heading.cs" />
-    <Compile Include="rover\Rover.cs" />
+    <Compile Include="rover_domain\CoordinatesExtensionPoint.cs" />
+    <Compile Include="rover_domain\DirectionExtensionPoint.cs" />
+    <Compile Include="rover_domain\Heading.cs" />
+    <Compile Include="rover_domain\IValidateRoverPosition.cs" />
+    <Compile Include="rover_domain\PlateauExtensionPoint.cs" />
+    <Compile Include="rover_domain\Rover.cs" />
+    <Compile Include="rover_domain\RoverExtensions.cs" />
     <Compile Include="shared\Coordinates.cs" />
     <Compile Include="shared\Instance.cs" />
-    <Compile Include="plateau\contracts\IPlateauFactory.cs" />
-    <Compile Include="plateau\contracts\IValidateCoordinates.cs" />
-    <Compile Include="plateau\contracts\IPlateauTasks.cs" />
-    <Compile Include="plateau\Plateau.cs" />
-    <Compile Include="plateau\PlateauFactory.cs" />
-    <Compile Include="plateau\PlateauTasks.cs" />
+    <Compile Include="plateau_domain\contracts\IPlateauFactory.cs" />
+    <Compile Include="plateau_domain\contracts\IValidateCoordinates.cs" />
+    <Compile Include="plateau_domain\contracts\IPlateauTasks.cs" />
+    <Compile Include="plateau_domain\Plateau.cs" />
+    <Compile Include="plateau_domain\PlateauFactory.cs" />
+    <Compile Include="plateau_domain\PlateauTasks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="validations\CoordinatesValidation.cs" />
+    <Compile Include="validations\ValidateRoverPosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

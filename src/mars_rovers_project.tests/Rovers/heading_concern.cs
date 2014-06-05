@@ -1,4 +1,4 @@
-﻿using mars_rovers_project.rover;
+﻿using mars_rovers_project.rover_domain;
 using NUnit.Framework;
 
 namespace mars_rovers_project.tests.Rovers
