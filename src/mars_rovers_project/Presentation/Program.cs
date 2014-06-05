@@ -1,9 +1,9 @@
 ﻿using System;
 using mars_rovers_project.Presentation.Contracts;
 using mars_rovers_project.common;
-using mars_rovers_project.plateau_domain;
-using mars_rovers_project.plateau_domain.contracts;
-using mars_rovers_project.rover_domain;
+using mars_rovers_project.domain_plateau;
+using mars_rovers_project.domain_plateau.contracts;
+using mars_rovers_project.domain_rover;
 using mars_rovers_project.shared;
 
 namespace mars_rovers_project.Presentation
@@ -37,29 +37,14 @@ namespace mars_rovers_project.Presentation
                 Coordinates coordinates;
                 char direction;
                 rover_positions(out coordinates, out direction);
-                navigate_rover(coordinates, plateau, direction);
+                navigate_rover(coordinates, plateau, direction, rover_instructions());
             }
         }
 
-        private void navigate_rover(Coordinates coordinates, Plateau plateau, char direction)
+        private string rover_instructions()
         {
-            default_console.WriteLine(
-                "Instructions for Rover to move or spin L - spin Left, M- Move, R - Spin Right eg: (LMLMLMLMM):");
-            var instructions = default_console.ReadLine();
-            try
-            {
-                var rover =
-                    Instance.Create<Rover>().deploy().at(coordinates).@in(plateau).facing_towards(direction).move_using(instructions);
-
-                default_console.WriteLine("Current position of rover : ");
-                default_console.WriteLine(string.Format("{0} {1} {2}", rover.Coordinates.point_x,
-                                                        rover.Coordinates.point_y,
-                                                        rover.Heading.Key.ToString().ToUpper()));
-            }
-            catch (Exception ex)
-            {
-                default_console.WriteLine(ex.Message);
-            }
+            default_console.WriteLine("Instructions for Rover to move or spin L - spin Left, M- Move, R - Spin Right eg: (LMLMLMLMM):");
+            return default_console.ReadLine();
         }
 
         private void rover_positions(out Coordinates coordinates, out char direction)
@@ -72,6 +57,20 @@ namespace mars_rovers_project.Presentation
         {
             default_console.WriteLine("Enter Boundaries of Plateau in the format of '5 5' : ");
             return plateau_presentation_creation(default_console.ReadLine, plateau_tasks);
+        }
+
+        private void navigate_rover(Coordinates coordinates, Plateau plateau, char direction, string instructions)
+        {
+            try
+            {
+                var rover = Instance.Create<Rover>().deploy().at(coordinates).@in(plateau).facing_towards(direction).move_using(instructions);
+                default_console.WriteLine("Current position of rover : ");
+                default_console.WriteLine(string.Format("{0} {1} {2}", rover.Coordinates.point_x, rover.Coordinates.point_y, rover.Heading.Key.ToString().ToUpper()));
+            }
+            catch (Exception ex)
+            {
+                default_console.WriteLine(ex.Message);
+            }
         }
     }
 }

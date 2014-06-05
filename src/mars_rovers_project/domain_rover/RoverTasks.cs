@@ -1,6 +1,6 @@
-﻿using mars_rovers_project.rover_domain.contracts;
+﻿using mars_rovers_project.domain_rover.contracts;
 
-namespace mars_rovers_project.rover_domain
+namespace mars_rovers_project.domain_rover
 {
     public class RoverTasks : IRoverTasks
     {

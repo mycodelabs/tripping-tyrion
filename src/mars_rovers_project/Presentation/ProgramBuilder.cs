@@ -1,5 +1,4 @@
-﻿using mars_rovers_project.Presentation.Contracts;
-using mars_rovers_project.plateau_domain;
+﻿using mars_rovers_project.domain_plateau;
 
 namespace mars_rovers_project.Presentation
 {

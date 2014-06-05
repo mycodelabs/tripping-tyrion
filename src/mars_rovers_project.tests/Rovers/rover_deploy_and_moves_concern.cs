@@ -1,8 +1,8 @@
 ﻿using System;
 using mars_rovers_project.common;
-using mars_rovers_project.plateau_domain;
-using mars_rovers_project.plateau_domain.contracts;
-using mars_rovers_project.rover_domain;
+using mars_rovers_project.domain_plateau;
+using mars_rovers_project.domain_plateau.contracts;
+using mars_rovers_project.domain_rover;
 using mars_rovers_project.shared;
 using NUnit.Framework;
 

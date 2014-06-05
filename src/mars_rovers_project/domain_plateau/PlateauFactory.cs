@@ -1,8 +1,8 @@
 using mars_rovers_project.common;
-using mars_rovers_project.plateau_domain.contracts;
+using mars_rovers_project.domain_plateau.contracts;
 using mars_rovers_project.shared;
 
-namespace mars_rovers_project.plateau_domain
+namespace mars_rovers_project.domain_plateau
 {
     public class PlateauFactory : IPlateauFactory
     {

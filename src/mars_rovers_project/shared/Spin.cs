@@ -1,7 +1,7 @@
 ﻿using System;
+using mars_rovers_project.domain_rover;
+using mars_rovers_project.domain_rover.contracts;
 using mars_rovers_project.infrastructure;
-using mars_rovers_project.rover_domain;
-using mars_rovers_project.rover_domain.contracts;
 
 namespace mars_rovers_project.shared
 {

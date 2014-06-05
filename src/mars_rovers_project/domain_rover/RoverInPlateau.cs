@@ -1,8 +1,8 @@
-using mars_rovers_project.plateau_domain;
-using mars_rovers_project.rover_domain.contracts;
+using mars_rovers_project.domain_plateau;
+using mars_rovers_project.domain_rover.contracts;
 using mars_rovers_project.validations;
 
-namespace mars_rovers_project.rover_domain
+namespace mars_rovers_project.domain_rover
 {
     public class RoverInPlateau
     {

@@ -1,4 +1,4 @@
-namespace mars_rovers_project.rover_domain
+namespace mars_rovers_project.domain_rover
 {
     public static class RoverExtensions
     {

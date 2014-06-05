@@ -2,8 +2,8 @@
 using Rhino.Mocks;
 using mars_rovers_project.Presentation;
 using mars_rovers_project.Presentation.Contracts;
-using mars_rovers_project.plateau_domain;
-using mars_rovers_project.plateau_domain.contracts;
+using mars_rovers_project.domain_plateau;
+using mars_rovers_project.domain_plateau.contracts;
 
 namespace mars_rovers_project.tests.Presentation
 {

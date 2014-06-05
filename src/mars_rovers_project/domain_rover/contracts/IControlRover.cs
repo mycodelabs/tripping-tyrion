@@ -1,4 +1,4 @@
-﻿namespace mars_rovers_project.rover_domain.contracts
+﻿namespace mars_rovers_project.domain_rover.contracts
 {
     public interface IControlRover
     {

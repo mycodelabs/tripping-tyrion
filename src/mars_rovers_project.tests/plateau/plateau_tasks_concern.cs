@@ -1,8 +1,8 @@
 ﻿using System;
-using mars_rovers_project.plateau_domain;
-using mars_rovers_project.plateau_domain.contracts;
 using NUnit.Framework;
 using Rhino.Mocks;
+using mars_rovers_project.domain_plateau;
+using mars_rovers_project.domain_plateau.contracts;
 using mars_rovers_project.shared;
 
 namespace mars_rovers_project.tests.plateau

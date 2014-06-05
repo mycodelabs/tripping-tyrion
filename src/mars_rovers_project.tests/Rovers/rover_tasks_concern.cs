@@ -1,8 +1,8 @@
 ﻿using Rhino.Mocks;
 using mars_rovers_project.common;
-using mars_rovers_project.rover_domain;
 using NUnit.Framework;
-using mars_rovers_project.rover_domain.contracts;
+using mars_rovers_project.domain_rover;
+using mars_rovers_project.domain_rover.contracts;
 
 namespace mars_rovers_project.tests.Rovers
 {
