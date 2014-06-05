@@ -12,6 +12,8 @@ namespace mars_rovers_project.tests.Rovers
             const char direction = 'n';
             var result = Compass.Get(direction);
             Assert.AreEqual(result, Compass.north);
+            Assert.AreEqual(result.left_direction, 'w');
+            Assert.AreEqual(result.right_direction, 'e');
         }
 
         [Test]
@@ -20,6 +22,8 @@ namespace mars_rovers_project.tests.Rovers
             const char direction = 's';
             var result = Compass.Get(direction);
             Assert.AreEqual(result, Compass.south);
+            Assert.AreEqual(result.left_direction, 'e');
+            Assert.AreEqual(result.right_direction, 'w');
         }
 
         [Test]
@@ -27,6 +31,8 @@ namespace mars_rovers_project.tests.Rovers
             const char direction = 'e';
             var result = Compass.Get(direction);
             Assert.AreEqual(result, Compass.east);
+            Assert.AreEqual(result.left_direction, 'n');
+            Assert.AreEqual(result.right_direction, 's');
         }
 
         [Test]
@@ -34,6 +40,8 @@ namespace mars_rovers_project.tests.Rovers
             const char direction = 'w';
             var result = Compass.Get(direction);
             Assert.AreEqual(result, Compass.west);
+            Assert.AreEqual(result.left_direction, 's');
+            Assert.AreEqual(result.right_direction, 'n');
         }
     }
 }

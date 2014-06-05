@@ -2,6 +2,6 @@
 {
     public interface IControlRover
     {
-        Rover control_using(string instructions);
+        Rover move_using(string instructions);
     }
 }

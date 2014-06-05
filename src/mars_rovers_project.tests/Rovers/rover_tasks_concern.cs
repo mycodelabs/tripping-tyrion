@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Rhino.Mocks;
 using mars_rovers_project.common;
 using mars_rovers_project.rover_domain;
 using NUnit.Framework;
+using mars_rovers_project.rover_domain.contracts;
 
 namespace mars_rovers_project.tests.Rovers
 {
@@ -10,13 +11,15 @@ namespace mars_rovers_project.tests.Rovers
     {
         private Rover rover;
         private RoverTasks rover_tasks;
+        private IRoverMove rover_move;
 
         [SetUp]
         public void setup()
         {
+            rover_move = MockRepository.GenerateMock<IRoverMove>();
             rover = Instance.Create<Rover>();
             rover.Heading = Compass.north;
-            rover_tasks = new RoverTasks();
+            rover_tasks = new RoverTasks(rover_move);
         }
 
         [Test]
@@ -31,14 +34,6 @@ namespace mars_rovers_project.tests.Rovers
         {
             rover_tasks.spin_right(ref rover);
             Assert.AreEqual(rover.Heading, Compass.east);
-        }
-
-        [Test]
-        [ExpectedException(typeof(NotImplementedException))]
-        public void Should_move_a_step()
-        {
-            rover_tasks.move_a_step(ref rover);
-            
         }
     }
 }

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="d:\projects\mars_rovers_project\artifacts\mars_rovers_project_test.dll" total="21" errors="4" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-06-05" time="19:05:02">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.6413" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="d:\projects\mars_rovers_project" machine-name="PADEV1980" user="dvanteru" user-domain="PHOENIX" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="d:\projects\mars_rovers_project\artifacts\mars_rovers_project_test.dll" executed="True" result="Failure" success="False" time="0.719" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="mars_rovers_project" executed="True" result="Failure" success="False" time="0.697" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="tests" executed="True" result="Failure" success="False" time="0.696" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="instance_concern" executed="True" result="Success" success="True" time="0.047" asserts="0">
+                <results>
+                  <test-case name="mars_rovers_project.tests.instance_concern.given_a_class_should_return_instance" executed="True" result="Success" success="True" time="0.028" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="plateau" executed="True" result="Failure" success="False" time="0.528" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="plateau_factory_concern" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                  <test-suite type="TestFixture" name="plateau_factory_concern+when_factory_is_asked_to_create_plateau" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.plateau.plateau_factory_concern+when_factory_is_asked_to_create_plateau.should_return_a_new_instance_with_given_coordinates" executed="True" result="Success" success="True" time="0.017" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="plateau_tasks_concern" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                  <test-suite type="TestFixture" name="plateau_tasks_concern+when_the_factory_is_asked_to_create_plateau" executed="True" result="Failure" success="False" time="0.505" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.plateau.plateau_tasks_concern+when_the_factory_is_asked_to_create_plateau.should_ask_plateau_factory" executed="True" result="Error" success="False" time="0.498" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.IO.FileLoadException : Could not load file or assembly 'Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f' or one of its dependencies. There is not enough space on the disk. (Exception from HRESULT: 0x80070070)]]></message>
+                          <stack-trace><![CDATA[at mars_rovers_project.tests.plateau.plateau_tasks_concern.when_the_factory_is_asked_to_create_plateau.setup()
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="mars_rovers_project.tests.plateau.plateau_tasks_concern+when_the_factory_is_asked_to_create_plateau.should_validate_the_coordinates_to_be_positive_integers" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.IO.FileLoadException : Could not load file or assembly 'Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f' or one of its dependencies. There is not enough space on the disk. (Exception from HRESULT: 0x80070070)]]></message>
+                          <stack-trace><![CDATA[at mars_rovers_project.tests.plateau.plateau_tasks_concern.when_the_factory_is_asked_to_create_plateau.setup()
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Rovers" executed="True" result="Failure" success="False" time="0.050" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="compass_concern" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.Rovers.compass_concern.Should_head_north_given_character_n" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Rovers.compass_concern.should_head_south_given_character_e" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Rovers.compass_concern.should_head_south_given_character_s" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Rovers.compass_concern.should_head_south_given_character_w" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="rover_concern" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_concern.Should_be_able_to_assign_heading_to_rover" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_concern.Should_be_able_to_create_a_rover" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_concern.Should_have_coordinates" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="rover_deploy_and_moves_concern" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern.Should_be_able_deploy_robot_at_given_coordinates_in_plateau_facing_given_direction" executed="True" result="Success" success="True" time="0.004" asserts="3" />
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern.Should_be_able_deploy_robot_at_given_coordinates_in_plateau_facing_given_direction_and_instruct" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern.Should_be_able_to_deploy_rover_at_given_coordinates" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern.should_be_able_to_deploy_rover_at_given_coordinates_in_plateau" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="rover_move_concern" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_move_concern.should_rover_a_step_towards_north" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="rover_tasks_concern" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_tasks_concern.Should_spin_left" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.IO.FileLoadException : Could not load file or assembly 'Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f' or one of its dependencies. There is not enough space on the disk. (Exception from HRESULT: 0x80070070)]]></message>
+                          <stack-trace><![CDATA[at mars_rovers_project.tests.Rovers.rover_tasks_concern.setup()
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="mars_rovers_project.tests.Rovers.rover_tasks_concern.Should_spin_right" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.IO.FileLoadException : Could not load file or assembly 'Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f' or one of its dependencies. There is not enough space on the disk. (Exception from HRESULT: 0x80070070)]]></message>
+                          <stack-trace><![CDATA[at mars_rovers_project.tests.Rovers.rover_tasks_concern.setup()
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Shared" executed="True" result="Success" success="True" time="0.046" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="spin_concern" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                    <results>
+                      <test-case name="mars_rovers_project.tests.Shared.spin_concern.Should_move_provided_M" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Shared.spin_concern.Should_spin_left_provided_L" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="mars_rovers_project.tests.Shared.spin_concern.Should_spin_right_provided_R" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

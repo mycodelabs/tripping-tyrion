@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6009D574-62FF-478E-9CD8-7ACBE1FB86EF}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>mars_rovers_project</RootNamespace>
     <AssemblyName>mars_rovers_project</AssemblyName>
@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -40,9 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="infrastructure\LookUp.cs" />
+    <Compile Include="Presentation\Contracts\IDeployRoverPositionAndDirection.cs" />
+    <Compile Include="Presentation\DeployRoverPositionAndDirection.cs" />
+    <Compile Include="Presentation\PlateauPresentationCreation.cs" />
+    <Compile Include="Presentation\DefaultConsole.cs" />
+    <Compile Include="Presentation\Contracts\IDefaultConsole.cs" />
+    <Compile Include="Presentation\Contracts\IPlateauPresentationCreation.cs" />
+    <Compile Include="Presentation\Program.cs" />
+    <Compile Include="Presentation\ProgramBuilder.cs" />
     <Compile Include="rover_domain\contracts\IControlRover.cs" />
+    <Compile Include="rover_domain\contracts\IRoverMove.cs" />
     <Compile Include="rover_domain\contracts\IRoverTasks.cs" />
     <Compile Include="rover_domain\contracts\IValidateRoverPosition.cs" />
+    <Compile Include="rover_domain\contracts\RoverMove.cs" />
     <Compile Include="rover_domain\RoverCoordinates.cs" />
     <Compile Include="rover_domain\Direction.cs" />
     <Compile Include="rover_domain\Compass.cs" />
@@ -67,6 +80,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

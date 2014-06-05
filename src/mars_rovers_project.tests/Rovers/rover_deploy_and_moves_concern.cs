@@ -17,17 +17,16 @@ namespace mars_rovers_project.tests.Rovers
         private Coordinates coordinates;
         private char direction;
         private IPlateauTasks plateau_tasks;
-        private const string instructions = "LR";
+        private const string instructions = "LMLMLMLMM";
 
         [SetUp]
         public void setup()
         {
             rover = Instance.Create<Rover>();
-            coordinates = new Coordinates { point_x = 3, point_y = 3 };
+            coordinates = new Coordinates { point_x = 3, point_y = 2 };
             plateau = new Plateau { coordinates = new Coordinates { point_x = 5, point_y = 5 } };
             direction = 'n';
         }
-
 
         [Test]
         public void Should_be_able_to_deploy_rover_at_given_coordinates()
@@ -48,7 +47,7 @@ namespace mars_rovers_project.tests.Rovers
         [Test]
         public void Should_be_able_deploy_robot_at_given_coordinates_in_plateau_facing_given_direction() 
         {
-            rover.deploy().at(coordinates).@in(plateau).facing(direction);
+            rover.deploy().at(coordinates).@in(plateau).facing_towards(direction);
             Assert.AreEqual(rover.Coordinates.point_x, coordinates.point_x);
             Assert.AreEqual(rover.Coordinates.point_y, coordinates.point_y);
             Assert.AreEqual(rover.Heading, Compass.north);
@@ -57,7 +56,10 @@ namespace mars_rovers_project.tests.Rovers
         [Test]
         public void Should_be_able_deploy_robot_at_given_coordinates_in_plateau_facing_given_direction_and_instruct()
         {
-            result = rover.deploy().at(coordinates).@in(plateau).facing(direction).control_using(instructions);
+            result = rover.deploy().at(coordinates).@in(plateau).facing_towards(direction).move_using(instructions);
+            Assert.AreEqual(3, result.Coordinates.point_x);
+            Assert.AreEqual(3, result.Coordinates.point_y);
+            Assert.AreEqual('n', result.Heading.Key);
         }
     }
 }

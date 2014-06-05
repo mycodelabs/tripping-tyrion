@@ -11,7 +11,7 @@ namespace mars_rovers_project.rover_domain
             this.rover = rover;
         }
 
-        public IControlRover facing(char direction)
+        public IControlRover facing_towards(char direction)
         {
             rover.Heading = Compass.Get(direction);
             return new ControlRover(rover);

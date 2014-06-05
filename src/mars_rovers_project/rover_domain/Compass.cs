@@ -1,4 +1,6 @@
-﻿using mars_rovers_project.infrastructure;
+﻿using System;
+using mars_rovers_project.infrastructure;
+using mars_rovers_project.rover_domain.contracts;
 
 namespace mars_rovers_project.rover_domain
 {
@@ -6,14 +8,18 @@ namespace mars_rovers_project.rover_domain
     {
         public char left_direction { get; set; }
         public char right_direction { get; set; }
+        public Action<IRoverMove, Rover> apply { get; set; }
+        public char Key { get; set; }
+     
+        public static Compass north = new Compass('n', 'w', 'e', (move, rover) => move.head_north(ref rover));
+        public static Compass south = new Compass('s', 'e', 'w', (move, rover) => move.head_south(ref rover));
+        public static Compass east = new Compass('e', 'n', 's', (move, rover) => move.head_east(ref rover));
+        public static Compass west = new Compass('w', 's', 'n', (move, rover) => move.head_west(ref rover));
 
-        public static Compass north = new Compass('n', 'w', 'e');
-        public static Compass south = new Compass('s', 'e', 'w');
-        public static Compass east = new Compass('e', 'n', 's');
-        public static Compass west = new Compass('w', 's', 'n');
-
-        private Compass(char direction, char left, char right)
+        private Compass(char direction, char left, char right, Action<IRoverMove, Rover> move)
         {
+            Key = direction;
+            apply = move;
             left_direction = left;
             right_direction = right;
             look_up.Add(direction,this);            

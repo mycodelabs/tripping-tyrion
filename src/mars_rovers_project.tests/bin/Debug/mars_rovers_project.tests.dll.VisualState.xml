@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1044]D:\projects\mars_rovers_project\src\mars_rovers_project.tests\bin\Debug\mars_rovers_project.tests.dll</TopNode>
+  <SelectedNode>[0-1034]mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern.should_be_able_to_deploy_rover_at_given_coordinates_in_plateau</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1044]D:\projects\mars_rovers_project\src\mars_rovers_project.tests\bin\Debug\mars_rovers_project.tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1045]mars_rovers_project" Expanded="true" />
+    <Node UniqueName="[0-1046]mars_rovers_project.tests" Expanded="true" />
+    <Node UniqueName="[0-1048]mars_rovers_project.tests.plateau" Expanded="true" />
+    <Node UniqueName="[0-1047]mars_rovers_project.tests.Rovers" Expanded="true" />
+    <Node UniqueName="[0-1032]mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern" Expanded="true" />
+    <Node UniqueName="[0-1049]mars_rovers_project.tests.Shared" Expanded="true" />
+  </Nodes>
+</VisualState>

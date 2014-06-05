@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentation\deploy_rover_presentation.cs" />
+    <Compile Include="Presentation\plateau_presentation_concern.cs" />
+    <Compile Include="Rovers\mars_rovers_acceptance_criteria.cs" />
+    <Compile Include="Rovers\rover_move_concern.cs" />
     <Compile Include="Shared\instance_concern.cs" />
     <Compile Include="Plateau\plateau_factory_concern.cs" />
     <Compile Include="Plateau\plateau_tasks_concern.cs" />
@@ -64,6 +68,7 @@
       <Name>mars_rovers_project</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

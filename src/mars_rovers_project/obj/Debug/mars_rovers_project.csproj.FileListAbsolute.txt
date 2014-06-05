@@ -1,11 +1,6 @@
-D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.dll
-D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.pdb
 D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.csprojResolveAssemblyReference.cache
-D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.dll
 D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.pdb
-C:\dev\marsroversproject\src\mars_rovers_project\bin\Debug\mars_rovers_project.dll
-C:\dev\marsroversproject\src\mars_rovers_project\bin\Debug\mars_rovers_project.pdb
-C:\dev\marsroversproject\src\mars_rovers_project\obj\Debug\mars_rovers_project.csprojResolveAssemblyReference.cache
-C:\dev\marsroversproject\src\mars_rovers_project\obj\Debug\mars_rovers_project.dll
-C:\dev\marsroversproject\src\mars_rovers_project\obj\Debug\mars_rovers_project.pdb
-C:\dev\marsroversproject\src\mars_rovers_project\bin\Debug\mars_rovers_project.dll.config
+D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.pdb
+D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.exe.config
+D:\projects\mars_rovers_project\src\mars_rovers_project\bin\Debug\mars_rovers_project.exe
+D:\projects\mars_rovers_project\src\mars_rovers_project\obj\Debug\mars_rovers_project.exe
