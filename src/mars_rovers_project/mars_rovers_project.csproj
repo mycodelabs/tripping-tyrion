@@ -51,7 +51,7 @@
     <Compile Include="rover_domain\Rover.cs" />
     <Compile Include="rover_domain\RoverExtensions.cs" />
     <Compile Include="rover_domain\RoverTasks.cs" />
-    <Compile Include="rover_domain\Spin.cs" />
+    <Compile Include="shared\Spin.cs" />
     <Compile Include="shared\Coordinates.cs" />
     <Compile Include="shared\Instance.cs" />
     <Compile Include="plateau_domain\contracts\IPlateauFactory.cs" />

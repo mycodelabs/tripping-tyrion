@@ -1,5 +1,6 @@
 ﻿using mars_rovers_project.common;
 using mars_rovers_project.rover_domain.contracts;
+using mars_rovers_project.shared;
 
 namespace mars_rovers_project.rover_domain
 {
@@ -17,7 +18,7 @@ namespace mars_rovers_project.rover_domain
         {
             foreach (var instruction in instructions)
             {
-                Spin.Get(instruction).rover_tasks(rover_tasks, rover);
+                Spin.Get(instruction).apply(rover_tasks, rover);
             }
             return rover;
         }
