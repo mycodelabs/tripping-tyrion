@@ -1,0 +1,21 @@
+Microsoft (R) Visual C# Compiler version 4.0.30319.17929
+
+for Microsoft (R) .NET Framework 4.5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+NUnit-Console version 2.6.3.13283
+Copyright (C) 2002-2012 Charlie Poole.
+Copyright (C) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov.
+Copyright (C) 2000-2002 Philip Craig.
+All Rights Reserved.
+
+Runtime Environment - 
+   OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+  CLR Version: 2.0.50727.5477 ( Net 3.5 )
+
+ProcessModel: Default    DomainUsage: Single
+Execution Runtime: net-3.5
+...........
+Tests run: 11, Errors: 0, Failures: 0, Inconclusive: 0, Time: 0.403048377408381 seconds
+  Not run: 0, Invalid: 0, Ignored: 0, Skipped: 0
+

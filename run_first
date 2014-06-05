@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+def install_utilities
+  `gem install --http-proxy http://peg-proxy01:80 bundler`
+  `bundle install`
+end
+
+install_utilities

@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="infrastructure\LookUp.cs" />
+    <Compile Include="rover\Heading.cs" />
+    <Compile Include="rover\Rover.cs" />
     <Compile Include="shared\Coordinates.cs" />
     <Compile Include="shared\Instance.cs" />
     <Compile Include="plateau\contracts\IPlateauFactory.cs" />
@@ -49,6 +52,9 @@
     <Compile Include="plateau\PlateauTasks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="validations\CoordinatesValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
