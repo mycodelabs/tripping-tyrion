@@ -2,19 +2,19 @@
 
 namespace mars_rovers_project.rover_domain
 {
-    public class CoordinatesExtensionPoint
+    public class RoverCoordinates
     {
         private readonly Rover rover_to_deploy;
 
-        public CoordinatesExtensionPoint(Rover rover)
+        public RoverCoordinates(Rover rover)
         {
             rover_to_deploy = rover;
         }
 
-        public PlateauExtensionPoint at(Coordinates coordinates)
+        public RoverInPlateau at(Coordinates coordinates)
         {
             rover_to_deploy.Coordinates = coordinates;
-            return new PlateauExtensionPoint(rover_to_deploy);
+            return new RoverInPlateau(rover_to_deploy);
         }
     }
 }

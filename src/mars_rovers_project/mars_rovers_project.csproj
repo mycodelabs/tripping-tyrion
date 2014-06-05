@@ -40,13 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="infrastructure\LookUp.cs" />
-    <Compile Include="rover_domain\CoordinatesExtensionPoint.cs" />
-    <Compile Include="rover_domain\DirectionExtensionPoint.cs" />
-    <Compile Include="rover_domain\Heading.cs" />
-    <Compile Include="rover_domain\IValidateRoverPosition.cs" />
-    <Compile Include="rover_domain\PlateauExtensionPoint.cs" />
+    <Compile Include="rover_domain\contracts\IControlRover.cs" />
+    <Compile Include="rover_domain\contracts\IRoverTasks.cs" />
+    <Compile Include="rover_domain\contracts\IValidateRoverPosition.cs" />
+    <Compile Include="rover_domain\RoverCoordinates.cs" />
+    <Compile Include="rover_domain\Direction.cs" />
+    <Compile Include="rover_domain\Compass.cs" />
+    <Compile Include="rover_domain\ControlRover.cs" />
+    <Compile Include="rover_domain\RoverInPlateau.cs" />
     <Compile Include="rover_domain\Rover.cs" />
     <Compile Include="rover_domain\RoverExtensions.cs" />
+    <Compile Include="rover_domain\RoverTasks.cs" />
+    <Compile Include="rover_domain\Spin.cs" />
     <Compile Include="shared\Coordinates.cs" />
     <Compile Include="shared\Instance.cs" />
     <Compile Include="plateau_domain\contracts\IPlateauFactory.cs" />

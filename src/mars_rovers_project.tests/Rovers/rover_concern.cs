@@ -28,8 +28,8 @@ namespace mars_rovers_project.tests.Rovers
         [Test]
         public void Should_be_able_to_assign_heading_to_rover()
         {
-            rover.Heading = Heading.north;
-            Assert.AreEqual(rover.Heading, Heading.north);
+            rover.Heading = Compass.north;
+            Assert.AreEqual(rover.Heading, Compass.north);
         }
 
         [Test]

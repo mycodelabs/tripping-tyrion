@@ -9,14 +9,15 @@ using NUnit.Framework;
 namespace mars_rovers_project.tests.Rovers
 {
     [TestFixture]
-    public class rover_deploy_concern
+    public class rover_deploy_and_moves_concern
     {
         private Rover rover;
         private Rover result;
         private Plateau plateau;
         private Coordinates coordinates;
-        private Heading direction;
+        private char direction;
         private IPlateauTasks plateau_tasks;
+        private const string instructions = "LR";
 
         [SetUp]
         public void setup()
@@ -24,7 +25,7 @@ namespace mars_rovers_project.tests.Rovers
             rover = Instance.Create<Rover>();
             coordinates = new Coordinates { point_x = 3, point_y = 3 };
             plateau = new Plateau { coordinates = new Coordinates { point_x = 5, point_y = 5 } };
-            direction = Heading.north;
+            direction = 'n';
         }
 
 
@@ -47,11 +48,16 @@ namespace mars_rovers_project.tests.Rovers
         [Test]
         public void Should_be_able_deploy_robot_at_given_coordinates_in_plateau_facing_given_direction() 
         {
-            result = rover.deploy().at(coordinates).@in(plateau).facing(direction);
-            Assert.AreEqual(result.Coordinates.point_x, coordinates.point_x);
-            Assert.AreEqual(result.Coordinates.point_y, coordinates.point_y);
-            Assert.AreEqual(result.Heading, direction);
+            rover.deploy().at(coordinates).@in(plateau).facing(direction);
+            Assert.AreEqual(rover.Coordinates.point_x, coordinates.point_x);
+            Assert.AreEqual(rover.Coordinates.point_y, coordinates.point_y);
+            Assert.AreEqual(rover.Heading, Compass.north);
         }
 
+        [Test]
+        public void Should_be_able_deploy_robot_at_given_coordinates_in_plateau_facing_given_direction_and_instruct()
+        {
+            result = rover.deploy().at(coordinates).@in(plateau).facing(direction).control_using(instructions);
+        }
     }
 }

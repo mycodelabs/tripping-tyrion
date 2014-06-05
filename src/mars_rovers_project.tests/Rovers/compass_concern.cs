@@ -4,36 +4,36 @@ using NUnit.Framework;
 namespace mars_rovers_project.tests.Rovers
 {
     [TestFixture]
-    public class heading_concern
+    public class compass_concern
     {
         [Test]
         public void Should_head_north_given_character_n()
         {
             const char direction = 'n';
-            var result = Heading.Get(direction);
-            Assert.AreEqual(result, Heading.north);
+            var result = Compass.Get(direction);
+            Assert.AreEqual(result, Compass.north);
         }
 
         [Test]
         public void should_head_south_given_character_s()
         {
             const char direction = 's';
-            var result = Heading.Get(direction);
-            Assert.AreEqual(result, Heading.south);
+            var result = Compass.Get(direction);
+            Assert.AreEqual(result, Compass.south);
         }
 
         [Test]
         public void should_head_south_given_character_e() {
             const char direction = 'e';
-            var result = Heading.Get(direction);
-            Assert.AreEqual(result, Heading.east);
+            var result = Compass.Get(direction);
+            Assert.AreEqual(result, Compass.east);
         }
 
         [Test]
         public void should_head_south_given_character_w() {
             const char direction = 'w';
-            var result = Heading.Get(direction);
-            Assert.AreEqual(result, Heading.west);
+            var result = Compass.Get(direction);
+            Assert.AreEqual(result, Compass.west);
         }
     }
 }

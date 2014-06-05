@@ -1,5 +1,6 @@
 ﻿using System;
 using mars_rovers_project.rover_domain;
+using mars_rovers_project.rover_domain.contracts;
 
 namespace mars_rovers_project.validations 
 {

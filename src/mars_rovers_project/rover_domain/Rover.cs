@@ -4,7 +4,7 @@ namespace mars_rovers_project.rover_domain
 {
     public class Rover
     {
-        public Heading Heading { get; set; }
+        public Compass Heading { get; set; }
         public Coordinates Coordinates { get; set; }
     }
 }

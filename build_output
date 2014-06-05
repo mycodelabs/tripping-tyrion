@@ -3,7 +3,7 @@ Microsoft (R) Visual C# Compiler version 4.0.30319.17929
 for Microsoft (R) .NET Framework 4.5
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-src\mars_rovers_project.tests\Rovers\rover_deploy_concern.cs(19,31): warning CS0169: The field 'mars_rovers_project.tests.Rovers.rover_deploy_concern.plateau_tasks' is never used
+src\mars_rovers_project.tests\Rovers\rover_deploy_and_moves_concern.cs(19,31): warning CS0169: The field 'mars_rovers_project.tests.Rovers.rover_deploy_and_moves_concern.plateau_tasks' is never used
 NUnit-Console version 2.6.3.13283
 Copyright (C) 2002-2012 Charlie Poole.
 Copyright (C) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov.
@@ -16,7 +16,7 @@ Runtime Environment -
 
 ProcessModel: Default    DomainUsage: Single
 Execution Runtime: net-3.5
-..............
-Tests run: 14, Errors: 0, Failures: 0, Inconclusive: 0, Time: 0.397333160272993 seconds
+...............
+Tests run: 15, Errors: 0, Failures: 0, Inconclusive: 0, Time: 0.403388259868213 seconds
   Not run: 0, Invalid: 0, Ignored: 0, Skipped: 0
 

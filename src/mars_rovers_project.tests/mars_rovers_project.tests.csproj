@@ -49,9 +49,9 @@
     <Compile Include="Plateau\plateau_factory_concern.cs" />
     <Compile Include="Plateau\plateau_tasks_concern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rovers\heading_concern.cs" />
+    <Compile Include="Rovers\compass_concern.cs" />
     <Compile Include="Rovers\rover_concern.cs" />
-    <Compile Include="Rovers\rover_tasks_concern.cs" />
+    <Compile Include="Rovers\rover_deploy_and_moves_concern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
