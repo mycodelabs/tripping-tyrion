@@ -40,10 +40,12 @@
     <Compile Include="infrastructure\LookUp.cs" />
     <Compile Include="Presentation\Contracts\IDeployRoverPositionAndDirection.cs" />
     <Compile Include="Presentation\DeployRoverPositionAndDirection.cs" />
+    <Compile Include="Presentation\IPresentRoverCurrentCoordinates.cs" />
     <Compile Include="Presentation\PlateauPresentationCreation.cs" />
     <Compile Include="Presentation\DefaultConsole.cs" />
     <Compile Include="Presentation\Contracts\IDefaultConsole.cs" />
     <Compile Include="Presentation\Contracts\IPlateauPresentationCreation.cs" />
+    <Compile Include="Presentation\Presentation.cs" />
     <Compile Include="Presentation\Program.cs" />
     <Compile Include="Presentation\ProgramBuilder.cs" />
     <Compile Include="domain_rover\contracts\IControlRover.cs" />
@@ -59,6 +61,7 @@
     <Compile Include="domain_rover\Rover.cs" />
     <Compile Include="domain_rover\RoverExtensions.cs" />
     <Compile Include="domain_rover\RoverTasks.cs" />
+    <Compile Include="Presentation\UserInteraction.cs" />
     <Compile Include="shared\Spin.cs" />
     <Compile Include="shared\Coordinates.cs" />
     <Compile Include="shared\Instance.cs" />
