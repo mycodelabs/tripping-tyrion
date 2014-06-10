@@ -8,14 +8,6 @@ using mars_rovers_project.shared;
 
 namespace mars_rovers_project.Presentation
 {
-    public interface IUserInteraction
-    {
-        string rover_instructions();
-        void rover_positions(out Coordinates coordinates, out char direction);
-        Plateau plateau_creation();
-        void navigate_rover(Coordinates coordinates, Plateau plateau, char direction, string instructions);
-    }
-
     public class UserInteraction : IUserInteraction
     {
         public readonly IPlateauTasks plateau_tasks;
@@ -32,7 +24,6 @@ namespace mars_rovers_project.Presentation
             rover_position_and_direction = roverPositionAndDirection;
             show_current_coordinates = showCurrentCoordinates;
         }
-
 
         public string rover_instructions()
         {

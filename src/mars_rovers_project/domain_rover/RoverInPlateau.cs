@@ -4,7 +4,7 @@ using mars_rovers_project.validations;
 
 namespace mars_rovers_project.domain_rover
 {
-    public class RoverInPlateau
+    public class RoverInPlateau : IRoverInPlateau
     {
         private readonly Rover rover_to_deploy;
         private readonly IValidateRoverPosition validate_rover_position;
@@ -15,7 +15,7 @@ namespace mars_rovers_project.domain_rover
             validate_rover_position = ValidateRoverPosition.validate;
         }
 
-        public Direction @in(Plateau plateau_to_deploy)
+        public IDirection @in(Plateau plateau_to_deploy)
         {
             validate_rover_position(rover_to_deploy, plateau_to_deploy);
             return new Direction(rover_to_deploy);

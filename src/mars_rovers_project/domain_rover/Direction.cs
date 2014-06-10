@@ -2,7 +2,7 @@
 
 namespace mars_rovers_project.domain_rover
 {
-    public class Direction
+    public class Direction : IDirection
     {
         private readonly Rover rover;
 

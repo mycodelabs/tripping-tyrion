@@ -2,7 +2,7 @@
 
 namespace mars_rovers_project.domain_rover
 {
-    public class RoverCoordinates
+    public class RoverCoordinates : IRoverCoordinates
     {
         private readonly Rover rover_to_deploy;
 
@@ -11,7 +11,7 @@ namespace mars_rovers_project.domain_rover
             rover_to_deploy = rover;
         }
 
-        public RoverInPlateau at(Coordinates coordinates)
+        public IRoverInPlateau at(Coordinates coordinates)
         {
             rover_to_deploy.Coordinates = coordinates;
             return new RoverInPlateau(rover_to_deploy);

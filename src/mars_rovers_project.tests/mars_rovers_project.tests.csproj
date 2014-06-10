@@ -38,8 +38,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Container\Automatically_resolving_dependency_factory_specs.cs" />
+    <Compile Include="Container\basic_dependency_factory_specs.cs" />
+    <Compile Include="Container\container_facade_concern.cs" />
+    <Compile Include="Container\dependency_factories_specs.cs" />
+    <Compile Include="Container\fetch_dependencies_concern.cs" />
     <Compile Include="Presentation\deploy_rover_presentation.cs" />
     <Compile Include="Presentation\plateau_presentation_concern.cs" />
     <Compile Include="Rovers\mars_rovers_acceptance_criteria.cs" />
@@ -63,9 +69,7 @@
       <Name>mars_rovers_project</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Container\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

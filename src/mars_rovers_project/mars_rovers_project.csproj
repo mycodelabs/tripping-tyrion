@@ -37,10 +37,31 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="container\AutomaticallyResolvingDependencyFactory.cs" />
+    <Compile Include="container\Basic\AnonymousDependencyFactory.cs" />
+    <Compile Include="container\Basic\DependecyFactories.cs" />
+    <Compile Include="container\Basic\DependencyContainer.cs" />
+    <Compile Include="container\Basic\ICreateErrorsFromFactoryContainerErrors.cs" />
+    <Compile Include="container\Basic\ICreateOneDependency.cs" />
+    <Compile Include="container\Basic\ICreateTheExceptionForAMissingDependencyFactory.cs" />
+    <Compile Include="container\Basic\IFindAFactoryForADependency.cs" />
+    <Compile Include="container\ContainerFacilities.cs" />
+    <Compile Include="container\Dependencies.cs" />
+    <Compile Include="container\Errors.cs" />
+    <Compile Include="container\IFetchDependencies.cs" />
+    <Compile Include="container\IPickAConstructor.cs" />
+    <Compile Include="container\ISetupTheContainer.cs" />
+    <Compile Include="container\ExpressionBuilder.cs" />
+    <Compile Include="container\ObjectFactory.cs" />
+    <Compile Include="domain_rover\IDirection.cs" />
+    <Compile Include="domain_rover\IRoverCoordinates.cs" />
+    <Compile Include="domain_rover\IRoverInPlateau.cs" />
     <Compile Include="infrastructure\LookUp.cs" />
+    <Compile Include="Presentation\ContainerGateway.cs" />
     <Compile Include="Presentation\Contracts\IDeployRoverPositionAndDirection.cs" />
     <Compile Include="Presentation\DeployRoverPositionAndDirection.cs" />
     <Compile Include="Presentation\IPresentRoverCurrentCoordinates.cs" />
+    <Compile Include="Presentation\IUserInteraction.cs" />
     <Compile Include="Presentation\PlateauPresentationCreation.cs" />
     <Compile Include="Presentation\DefaultConsole.cs" />
     <Compile Include="Presentation\Contracts\IDefaultConsole.cs" />
@@ -61,6 +82,7 @@
     <Compile Include="domain_rover\Rover.cs" />
     <Compile Include="domain_rover\RoverExtensions.cs" />
     <Compile Include="domain_rover\RoverTasks.cs" />
+    <Compile Include="Presentation\Registry.cs" />
     <Compile Include="Presentation\UserInteraction.cs" />
     <Compile Include="shared\Spin.cs" />
     <Compile Include="shared\Coordinates.cs" />
